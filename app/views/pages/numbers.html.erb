@@ -2,8 +2,8 @@
 
 <div id="numbers-game">
   <div class="row">
-    <% (1..10).to_a.shuffle.each do |number| %>
-      <div class="box col-md-2 "><%= number %></div>
+    <% (1..10).to_a.each do |number| %>
+      <div class="box col-md-2" onclick="clickNumber(<%=number%>, this)"><%= number %></div>
       <div class="col-md-1"> </div>
     <% end %>
   </div>

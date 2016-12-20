@@ -1,0 +1,10 @@
+<h1>Box CALCULATOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+
+<div class="box col-md-12" id="display"></div>
+<div class="row">
+  <% (1..9).to_a.each do |number| %>
+    <div class="box col-md-2" onclick="calculator(<%=number%>)"><%= number %></div>
+    <div class="col-md-1"> </div>
+  <% end %>
+</div>
+
